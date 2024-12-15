@@ -82,6 +82,7 @@ span {
     align-items: center;
     gap: 7em;
     padding: 30px 12% 0;
+    padding-top: 100px;
 }
 
 .home-content {
