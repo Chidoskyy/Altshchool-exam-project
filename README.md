@@ -35,3 +35,50 @@ This documentation explains the steps taken to provision a server, link a GitHub
 ### **Installing Git:**
 ```bash
 sudo apt install git -y
+
+
+Here is the text reformatted in Markdown:
+
+Linking GitHub Repository to Server
+
+Step 1: Install Git
+
+Install Git on the instance using the following command:
+
+bash
+sudo apt install git -y
+
+
+Step 2: Generate and Add SSH Key
+
+Generate SSH Key
+
+Generate an SSH key on the instance:
+
+bash
+ssh-keygen
+
+
+Copy Public Key
+
+Copy the public key:
+
+bash
+cat ~/.ssh/id_ed25519.pub
+
+
+Add Public Key to GitHub Repository
+
+Add the public key to your GitHub repository:
+
+1. Navigate to Settings > SSH and GPG Keys > Add New Key
+2. Paste the copied public key
+
+Step 3: Clone Repository
+
+Clone the GitHub repository to the server:
+
+bash
+git clone <repository_url>
+
+Replace <repository_url> with the actual URL of your GitHub repository.
